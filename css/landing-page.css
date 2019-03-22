@@ -1,0 +1,541 @@
+/*!
+ * Start Bootstrap - Landing Page v5.0.3 (https://startbootstrap.com/template-overviews/landing-page)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
+ */
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+}
+
+
+.light-blue{
+  color: #00C4FF;
+}
+.dark-blue{
+  color: #0E82B4 ;
+}
+.purple {
+  color: #691EBB;
+}
+
+.text-orange {
+  color: #FF7F00;
+}
+
+/* Carrosel Slide Top */
+header .carousel-indicators li{
+  /* bottom: 10%; */
+  background-color: #0E82B4 !important;
+}
+header .carousel-indicators li {
+  box-sizing: content-box;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-top: 0 ; 
+  border-bottom: 0;
+  opacity: .5;
+  transition: opacity .6s ease;
+}
+
+#carousel-fundagua .carousel-item {
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#carousel-fundagua .carousel-caption {
+  position: absolute;
+  /* right: 15%; */
+  top: 15%;
+  left: 5%;
+  bottom: 0px !important;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: left;
+  height: 400px;
+}
+
+#carousel-fundagua h2.title{
+  color: #4C4CCE;
+  font-weight: bold;
+  font-size: 51px;
+}
+
+#carousel-fundagua p.descricao{
+  color: #0E82B4;
+  font-weight: 300;
+  font-size: 22px;
+}
+
+#carousel-fundagua #btn-carousel  {
+  color: #fff;
+  background-image: linear-gradient(to top, #6b1bba, #3359df, #0082f5, #00a5fe, #00c4ff);
+  padding: 10px 35px;
+  border-radius: 25px 25px;
+  font-weight: bold;
+  border: none;
+}
+
+/* header.masthead {
+  position: relative;
+  background-color: #343a40;
+  background: url("../img/bg-masthead.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+header.masthead .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+header.masthead h1 {
+  font-size: 2rem;
+} */
+
+
+/* Fim Slide Carrosel */
+
+/* NavBar Dropdown */
+ .navbar .dropdown-menu {
+  padding: 0;
+ }
+
+ .navbar .dropdown a:hover{
+  color:#fff;
+}
+/* adds some margin below the link sets  */
+.navbar .dropdown-menu div[class*="col"] {
+  margin-bottom:1rem;
+}
+
+.navbar .dropdown-menu .bg-top-nav {
+  padding: 15px 0px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  background-color:#0E82B4!important;
+}
+
+.navbar .dropdown-menu {
+ border:none;
+ background-color:#00B3FF!important;
+}
+
+
+/* breakpoint and up - mega dropdown styles */
+@media screen and (min-width: 992px) {
+ 
+ /* remove the padding from the navbar so the dropdown hover state is not broken */
+.navbar {
+ padding-top:0px;
+ padding-bottom:0px;
+}
+
+/* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+.navbar .nav-item {
+ padding:15px 10px;
+ margin:0 .25rem;
+ font-weight: 600;
+ font-size: 16px;
+}
+
+/* makes the dropdown full width  */
+.navbar .dropdown {position:static;}
+
+.navbar .dropdown-menu {
+ width:100%;
+ left:0;
+ right:0;
+/*  height of nav-item  */
+ top:65px;
+}
+ 
+ /* shows the dropdown menu on hover */
+.navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover,  .navbar .dropdown:hover {
+ display:block!important;
+ background-color:#00B3FF!important;
+}
+
+ 
+ .navbar .dropdown-menu {
+   border: 1px solid rgba(0,0,0,.15);
+   background-color:#00B3FF!important;
+ }
+
+}
+
+
+
+.navbar-top{
+  height: 40px;
+  width: 100%;
+  background: url("../img/topNav.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Fim NavBar Dropdown*/ 
+
+
+
+
+/* Prev Complementar */
+
+#prev-complementar #title {
+  font-weight: 300;
+  text-align: center;
+  color: #007CB1;
+}
+
+#prev-complementar .title-box{
+  font-size: 39px;
+  font-weight: 300;
+}
+
+#prev-complementar .title-box span {
+  font-weight: bold;
+}
+
+
+#prev-complementar .btn-outline-light-blue {
+  color: #00B3FF;
+  padding: 10px 35px;
+  margin: 10px 2px;
+  font-weight: 300;
+  font-size: 22px;
+  background-color: transparent;
+  background-image: none;
+  border-radius: 45px;
+  border-color: #00B3FF;
+}
+
+#prev-complementar .btn-outline-light-blue:hover {
+  color: #fff;
+  background-color: #00B3FF;
+  border-color: #00B3FF;
+}
+
+#prev-complementar .btn-outline-purple {
+  color: #691EBB;
+  padding: 10px 35px;
+  margin: 10px 2px;
+  font-weight: 300;
+  font-size: 22px;
+  background-color: transparent;
+  background-image: none;
+  border-radius: 45px;
+  border-color: #691EBB;
+}
+
+#prev-complementar .btn-outline-purple:hover {
+  color: #fff;
+  background-color: #691EBB;
+  border-color: #691EBB;
+}
+
+#prev-complementar .box-prev {
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+}
+
+#prev-complementar .box-prev img {
+  width: 37px;
+  height: 37px;
+}
+
+
+
+/* Fim prev complementar */
+
+
+/** Noticias ******* */
+
+.noticias {
+  padding: 12vh 0;
+}
+
+.noticias .justify-content-center {
+  -ms-flex-pack: center!important;
+  justify-content: center!important;
+  text-align: center !important;
+}
+
+.noticias .nav-tabs .nav-link {
+  font-size: 39px;
+  font-weight: 200;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+} 
+
+.noticias .badge-categoria {
+  background: #FF7F00;
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 9px;
+}
+
+.noticias .text-categoria {
+  font-size: 10px;
+}
+
+.noticias .title-post {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.noticias .text-descricao {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.noticias .btn-ver-mais {
+  background-image: linear-gradient(to top, #00c4ff, #00a5fe);
+  color: white;
+  border-radius: 45px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 35px;
+  margin: 10px 2px;
+}
+
+
+
+
+ /**** Fim Noticias ******/
+
+
+ /***** Section Video ******/ 
+
+.text-video{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+ /***** Fim Section Video ****/
+
+
+ /*** Inicio Mais Fundiagua ****/ 
+
+.title { 
+  font-size: 39px;
+  font-weight: 300;
+}
+
+.mais-fundiagua .col-mais{
+  border: 1px solid #00C4FF;
+  border-radius: 30px;
+
+}
+
+.mais-fundiagua .title-box {
+  font-size: 21px;
+  font-weight: 300;
+}
+
+ /****** Fim Mais Fundiagua  *****/
+
+.features-icons {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.features-icons .features-icons-item {
+  max-width: 20rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon {
+  height: 7rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
+  font-size: 4.5rem;
+}
+
+.features-icons .features-icons-item:hover .features-icons-icon i {
+  font-size: 5rem;
+}
+/** VIdeo  **/
+.video {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+/** FIm Video **/
+
+/** Emprestimo Assistencia **/
+
+.assistencia .card-ass {
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+  margin: 0 2em;
+}
+
+.assistencia .card-ass .card-title{
+  color: #4C4CCE;
+  font-size: 39px;
+  font-weight: 300;
+}
+
+.assistencia .card-ass .card-body{
+  color: #0E82B4;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.assistencia .btn-outline-purple {
+  color: #691EBB;
+  padding: 10px 35px;
+  margin: 10px 2px;
+  font-weight: 600;
+  min-width: 275px;
+  font-size: 17px;
+  background-color: transparent;
+  background-image: none;
+  border-radius: 45px;
+  border-color: #00B3FF;
+}
+
+.assistencia .btn-outline-purple:hover {
+  color: #fff;
+  background-color: #00B3FF;
+  border-color: #00B3FF;
+}
+
+/** Fim emprestimo Assistencia **/
+
+
+/**** Numeros ******/
+
+.numeros .subtitle{
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.numeros .col-mais{
+  max-width: 23%;
+  padding: 0;
+  border-radius: 9px;
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+}
+
+.numeros .col-mais .number {
+  font-size: 26px;
+  font-weight: 700;
+  padding: 0px !important;
+  margin: 0px;
+}
+
+.numeros .col-mais .title-box {
+  font-size: 22px;
+  font-weight: 300;
+  padding: 0px !important;
+  margin: 0px;
+}
+
+.numeros .desc-box {
+  font-size: 10px; 
+  font-weight: 300;
+}
+
+/***** FIm de Numeros ******/
+
+
+/** Inicio Atendimento ****/
+
+.atendimento {
+  padding: 5vh 0;
+}
+
+.atendimento .subtitle{
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.atendimento .col-mais{
+  max-width: 22%;
+  padding: 0;
+  background-color:#00B3FF;
+  border-radius: 35px;
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+}
+
+.atendimento .col-mais .title-col {
+  font-size: 17px;
+  font-weight: 700;
+  padding: 0px !important;
+  margin: 0px;
+}
+
+.atendimento .col-mais .title-box {
+  font-size: 22px;
+  font-weight: 300;
+  padding: 0px !important;
+  margin: 0px;
+}
+
+.atendimento .desc-box {
+  font-size: 10px; 
+  font-weight: 300;
+}
+
+/**** Fim Atendimento *****/
+
+/** Inicio Footer -****/
+footer.footer {
+  padding-top: 4rem;
+ 
+}
+
+footer .font-bold{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+footer #sub-footer{
+  background: #0E82B4;
+}
+
+/*** Fim Footer ***/
